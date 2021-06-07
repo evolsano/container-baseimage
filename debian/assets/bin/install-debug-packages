@@ -1,0 +1,8 @@
+#!/bin/bash -e
+
+# install-debug-packages [extra package 1] [extra package 2] ...
+
+container-logger level eq trace && set -x
+
+package-index-update
+packages-install-clean "$@" ${CONTAINER_DEBUG_PACKAGES}

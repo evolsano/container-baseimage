@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.1.10] - 2025-05-13
+### Changed
+  - Bump to Alpine 3.21.3
+
 ## [0.1.9] - 2021-03-13
 ### Changed
   - Multiple log line message are now split and log line by line for a nicest display.
@@ -66,6 +70,7 @@
 ## 0.1.0
 Initial release
 
+[0.1.10]: https://github.com/evolsano/docker-light-baseimage/compare/alpine-v0.1.10...alpine-v0.1.10
 [0.1.9]: https://github.com/osixia/docker-light-baseimage/compare/alpine-v0.1.9...alpine-v0.1.9
 [0.1.9]: https://github.com/osixia/docker-light-baseimage/compare/alpine-v0.1.7...alpine-v0.1.9
 [0.1.7]: https://github.com/osixia/docker-light-baseimage/compare/alpine-v0.1.6...alpine-v0.1.7

@@ -297,7 +297,7 @@ def import_env_files():
 						debug("process environment file : " + filepath)
 
 						if file.endswith(ENV_FILES_YAML_EXTENSIONS):
-							env_vars = yaml.load(f)
+							env_vars = yaml.safe_load(f)
 
 						elif file.endswith(ENV_FILES_JSON_EXTENSIONS):
 							env_vars = json.load(f)
@@ -809,7 +809,7 @@ def main(args):
 		run_no_process_container(args)
 
 # Parse options.
-parser = argparse.ArgumentParser(description = 'Initialize the system.', epilog='Osixia! Light Baseimage: https://github.com/osixia/docker-light-baseimage')
+parser = argparse.ArgumentParser(description = 'Initialize the system.', epilog='evolsano! Light Baseimage: https://github.com/evolsano/docker-light-baseimage')
 parser.add_argument('main_command', metavar = 'MAIN_COMMAND', type = str, nargs = '*',
 	help = 'The main command to run, leave empty to only run container process.')
 parser.add_argument('-e', '--skip-env-files', dest = 'skip_env_files',

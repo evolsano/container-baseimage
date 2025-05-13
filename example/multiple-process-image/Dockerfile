@@ -1,9 +1,9 @@
-# Use osixia/light-baseimage
-# https://github.com/osixia/docker-light-baseimage
-FROM osixia/light-baseimage:alpine-0.1.9
+# Use evolsano/light-baseimage
+# https://github.com/evolsano/docker-light-baseimage
+FROM evolsano/light-baseimage:alpine-0.1.10
 
 # Install multiple process stack, nginx and php7.0-fpm and clean apt-get files
-# https://github.com/osixia/docker-light-baseimage/blob/stable/image/tool/add-multiple-process-stack
+# https://github.com/evolsano/docker-light-baseimage/blob/stable/image/tool/add-multiple-process-stack
 RUN apk update \
     && /container/tool/add-multiple-process-stack \
     && apk add \
@@ -15,7 +15,7 @@ RUN apk update \
 ADD service /container/service
 
 # Use baseimage install-service script
-# https://github.com/osixia/docker-light-baseimage/blob/stable/image/tool/install-service
+# https://github.com/evolsano/docker-light-baseimage/blob/stable/image/tool/install-service
 RUN /container/tool/install-service
 
 # Add default env directory

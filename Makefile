@@ -1,6 +1,10 @@
 NAME = osixia/light-baseimage
 VERSION = alpine-0.1.9
 
+becomes:
+NAME = evolsano/light-baseimage
+VERSION = alpine-0.1.10
+
 .PHONY: build build-nocache test tag-latest push push-latest release git-tag-version
 
 build:

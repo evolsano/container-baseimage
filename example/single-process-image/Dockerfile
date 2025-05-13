@@ -1,6 +1,6 @@
-# Use osixia/light-baseimage
-# https://github.com/osixia/docker-light-baseimage
-FROM osixia/light-baseimage:alpine-0.1.9
+# Use evolsano/light-baseimage
+# https://github.com/evolsano/docker-light-baseimage
+FROM evolsano/light-baseimage:alpine-0.1.10
 
 # Download nginx from apk and clean apk files
 RUN apk update \
@@ -12,7 +12,7 @@ RUN apk update \
 ADD service /container/service
 
 # Use baseimage install-service script
-# https://github.com/osixia/docker-light-baseimage/blob/alpine/image/tool/install-service
+# https://github.com/evolsano/docker-light-baseimage/blob/alpine/image/tool/install-service
 RUN /container/tool/install-service
 
 # Add default env directory

@@ -3,6 +3,6 @@
 
 # All environment variables used after the container first start
 # must be defined here.
-# more information : https://github.com/osixia/docker-light-baseimage
+# more information : https://github.com/evolsano/docker-light-baseimage
 
 WHO_AM_I: We are Anonymous. We are Legion. We do not forgive. We do not forget. Expect us.
